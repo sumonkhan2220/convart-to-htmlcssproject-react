@@ -1,38 +1,341 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: arial;
+  color: #000;
+  background: #ecd9d8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.template {
+  width: 960px;
+  margin: 0 auto;
+}
+.clear {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* header left css */
+.header-left {
+  /* float: left; */
+  /*width: 350px;*/
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-left h2 {
+  font-size: 40px;
+  line-height: 65px;
+  color: #fff;
+  /* padding-left: 80px; */
+  text-transform: uppercase;
+  padding-right: 190px;
+}
+
+/* nav & nav-link*/
+nav {
+  background: #0b1b2b;
+  width: 960px;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+}
+
+.nav-link {
   color: white;
+  margin: 0 1rem 0 0;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  list-style: none;
+  /* float: right; */
+}
+.nav-link:hover,
+#active {
+  color: #00adef;
 }
 
-.App-link {
-  color: #61dafb;
+/* home page main section start */
+.main-section .main {
+  background: url(image/pic.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* home page main-left section start */
+.main-left {
+  float: left;
+  width: 50%;
+  padding-left: 90px;
+  padding-top: 65px;
 }
+
+.main-left h2 {
+  /* font-spadding: 5px; */
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Alegreya SC", serif;
+  font-family: "Share", cursive;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.main-left h3 {
+  font-size: 50px;
+  font-style: italic;
+  margin-top: 35px;
+  color: #fff;
+}
+
+.main-left p {
+  color: #fff;
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Alegreya SC", serif;
+  font-family: "Share", cursive;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+}
+
+.contact {
+  width: 150px;
+  height: 39px;
+  border: 2px solid #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 8px;
+  margin-bottom: 150px;
+}
+
+.contact a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+/*home page main-left section end */
+
+/*home page main-right section start form */
+.from-right {
+  width: 47%;
+  float: right;
+  background: #0b1b2b;
+  opacity: 0.9;
+  padding-top: 60px;
+}
+.content {
+  border-bottom: 2px solid #0b1b60;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.content h2 {
+  font-size: 38px;
+  color: #fff;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.content p {
+  color: #fff;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.all-class {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+form .all-class input[type="text"],
+input[type="code"],
+input[type="date"] {
+  width: 140px;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+}
+
+form .all-class input[type="email"] {
+  width: 294px;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-left: 72px;
+  margin-bottom: 15px;
+}
+
+form .all-class input[type="name"],
+input[type="any"],
+input[type="time"] {
+  width: 140px;
+  float: right;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+form .all-class input[type="email"] {
+  width: 294px;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-left: 72px;
+  margin-bottom: 15px;
+}
+
+.sel select {
+  /* float: right;
+  margin-top: 15px;
+  margin-right: 187px;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 3px; */
+
+  width: 140px;
+  float: right;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-left: 230px;
+  margin-top: 20px;
+  width: 100px;
+  background: #00adef;
+  margin-bottom: 100px;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+/*home page main-right section end form */
+/* home page main section end */
+
+/* home page footer section start */
+.footer-section {
+  background: #fff;
+}
+
+.footer {
+  margin-top: 85px;
+}
+/* footer left start  */
+.footer-left {
+  width: 42%;
+  float: left;
+  margin-left: 70px;
+}
+
+.footer-left h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #a9a9a9;
+}
+
+.footer-left h3 {
+  margin-top: 20px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Source Serif Pro", serif;
+  color: #a9a9a9;
+}
+
+.cons {
+  margin-top: 25px;
+}
+
+.cons ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.cons ul li a {
+  text-decoration: none;
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.cons ul li.active a {
+  position: relative;
+}
+
+.cons ul li.active a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #800000;
+  left: 0;
+  bottom: 0;
+}
+
+.footerleft p {
+  font-size: 15px;
+  text-align: justify;
+  padding-top: 25px;
+  color: #a9a9a9;
+}
+
+.more {
+  margin-left: 35px;
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+
+.more ul li {
+  list-style: none;
+  border: 2px solid #e44b4d;
+  width: 150px;
+  padding: 5px;
+  background: #e44b4d;
+  border-radius: 3px;
+}
+.more ul li a {
+  text-decoration: none;
+  padding-left: 28px;
+  color: #fff;
+}
+/* footer left end  */
+/* footer right start */
+.footer-right {
+  width: 50%;
+}
+
+.images {
+  background: url(image/pic2.jpg);
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  width: 700px;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 100%; */
+}
+/* footer right end */
+/* home page footer section end */
